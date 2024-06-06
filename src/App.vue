@@ -23,8 +23,12 @@ export default {
   data() {
         return {
             isLoginOpen: false
+            // this.$store.commit("setIsLoggedIn")
         }
     },
+    mounted() {
+    this.$store.commit("setIsLoggedIn");
+  },
   components: { AppHeader, LoginModal }
 
 }

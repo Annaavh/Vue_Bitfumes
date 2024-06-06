@@ -7,6 +7,14 @@
 <script>
 export default {
 
+    data(){
+        return {
+            store:this.$store.state
+        }
+    },
+    mounted(){
+        console.log(this.$store.state)
+    }
 }
 </script>
 <style></style>
